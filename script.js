@@ -6,10 +6,10 @@ const result =[];
 let CurrentSubArr = [];
 let CurrentSum = 0;
 for(const num of arr){
- if(num+CurrentSum<=n){
+ if(CurrentSum+num<=n){
 	 CurrentSubArr.push(num);
 	 CurrentSum+=num
-	;
+;
  }
 	else{
 		result.push(CurrentSubArr);
